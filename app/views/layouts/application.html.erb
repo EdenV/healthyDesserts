@@ -7,14 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-<%= link_to "Cakes", cakes_path %>
-<%= link_to "Cookies", cookies_path %>
-<%= link_to "Pies", pies_path %>
-<%= link_to "Contact", contact_path %>
-<%= yield %>
-
+	<%= render 'layouts/navSection' %>
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
 </html>

@@ -5,6 +5,7 @@ HealthyDesserts::Application.routes.draw do
   get "cookies" => "pages#cookies"
   get "pies" => "pages#pies"
   get "contact" => "pages#contact"
+  get "order" => "pages#order"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

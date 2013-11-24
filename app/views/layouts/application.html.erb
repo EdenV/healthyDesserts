@@ -9,6 +9,9 @@
 <body>
 	<%= render 'layouts/navSection' %>
 	<div class="container">
+	<% flash.each do |name, msg| %>
+		<%= content_tag(:div, mst, class: "alert alert-#{name}") %>
+	<% end %>
 		<%= yield %>
 	</div>
 </body>

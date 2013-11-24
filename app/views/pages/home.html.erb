@@ -1,7 +1,11 @@
 <div class="jumbotron center">
 	<h1>Welcome to Healthy Desserts</h1>
-	<p>Home of the healthiest desserts in New York!</br>
-	<button type="button" class="btn btn-default">Log in</button>
-	<button type="button" class="btn btn-primary">Sign Up!</button></p>
+	<% if user_signed_in? %>
+		# do something
+	<% else %>
+		<p>Home of the healthiest desserts in New York!</br>	
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %></p>
+	<% end %>
 	<cente><img src="http://wheretogetmarried.co.uk/dir/users_content/users_images/images/ab4c3aedcf4016c88341b5726fffe9f9.jpg"></cente>
 <div> 
